@@ -7,6 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <title>Document</title>
+    <style>
+        footer label {
+            display: inline-block;
+            background-color: indigo;
+            color: white;
+            padding: 0.5rem;
+            font-family: sans-serif;
+            border-radius: 0.3rem;
+            cursor: pointer;
+            margin-top: 1rem;
+        }
+    </style>
+
+
 </head>
 
 <body>
@@ -46,7 +60,7 @@
             <div class="form-group">
                 <label for="exampleFormControlSelect2">Symbol Name</label>
                 <select class="custom-select">
-                    <option selected>Choose options</option>
+                    <option selected>Choose One</option>
                     <option value="1">One</option>
                     <option value="2">Two</option>
                     <option value="3">Three</option>
@@ -74,11 +88,11 @@
             <div class="form-group">
                 <label for="exampleFormControlInput1">Section</label>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                    <input class="form-check-input" type="checkbox" name="exampleRadios" id="exampleRadios1" value="option1" checked>
                     <label class="form-check-label" for="exampleRadios1">Print</label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                    <input class="form-check-input" type="checkbox" name="exampleRadios" id="exampleRadios2" value="option2">
                     <label class="form-check-label" for="exampleRadios2">Online</label>
                 </div>
             </div>
@@ -116,7 +130,7 @@
             <div class="form-group">
                 <label for="exampleFormControlSelect2">Division</label>
                 <select class="custom-select">
-                    <option selected>Choose options</option>
+                    <option selected>Choose One</option>
                     <option value="1">Barisal</option>
                     <option value="2">Chittagong</option>
                     <option value="3">Dhaka</option>
@@ -129,7 +143,7 @@
             <div class="form-group">
                 <label for="exampleFormControlSelect2">District</label>
                 <select class="custom-select">
-                    <option selected>Choose options</option>
+                    <option selected>Choose One</option>
                     <option value="1">Barisal</option>
                     <option value="2">Kushtia</option>
                     <option value="3">Dhaka</option>
@@ -142,7 +156,7 @@
             <div class="form-group">
                 <label for="exampleFormControlSelect2">Author</label>
                 <select class="custom-select">
-                    <option selected>Choose options</option>
+                    <option selected>Choose One</option>
                     <option value="1">Mr X</option>
                     <option value="2">Mr Y</option>
                     <option value="3">Mr Z</option>
@@ -151,7 +165,7 @@
             <div class="form-group">
                 <label for="exampleFormControlSelect2">Editor</label>
                 <select class="custom-select">
-                    <option selected>Choose options</option>
+                    <option selected>Choose One</option>
                     <option value="1">Mr X</option>
                     <option value="2">Mr Y</option>
                     <option value="3">Mr Z</option>
@@ -160,7 +174,7 @@
             <div class="form-group">
                 <label for="exampleFormControlSelect2">Occasion</label>
                 <select class="custom-select">
-                    <option selected>Choose options</option>
+                    <option selected>Choose One</option>
                     <option value="1">Mr X</option>
                     <option value="2">Mr Y</option>
                     <option value="3">Mr Z</option>
@@ -168,23 +182,19 @@
             </div>
         </div>
         <footer class="container d-flex justify-content-end ">
-            <button class="mr-5 btn btn-info">Reset</button>
-            <button class="mr-5 btn btn-primary">Upload</button>
+            <!-- <button class="mr-5 btn btn-info">Reset</button>
+            <button class="mr-5 btn btn-primary">Upload</button> -->
+            <div class="mr-5">
+                <input type="file" id="upload" hidden />
+                <label for="upload">Upload</label>
+            </div>
+            <div class="mr-5">
+                <input type="file" id="upload" hidden />
+                <label for="upload">Reset</label>
+            </div>
+
         </footer>
     </form>
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
     </script>
