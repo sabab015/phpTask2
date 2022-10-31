@@ -24,7 +24,6 @@
 </head>
 
 <body>
-
     <form style="border:1px solid #495057" class="container ">
         <div class="m-5">
             <div class="form-group">
@@ -75,15 +74,10 @@
                 <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Tags">
                 <br>
                 <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Select Some Options">
-
             </div>
             <div class="form-group">
                 <label for="exampleFormControlInput1">News Category</label>
                 <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Select Some Options">
-            </div>
-            <div class="form-group">
-                <label for="exampleFormControlInput1">Photo Details</label>
-                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Photo Details">
             </div>
             <div class="form-group">
                 <label for="exampleFormControlInput1">Section</label>
@@ -188,11 +182,6 @@
                 <input type="file" id="upload" hidden />
                 <label for="upload">Upload</label>
             </div>
-            <div class="mr-5">
-                <input type="file" id="upload" hidden />
-                <label for="upload">Reset</label>
-            </div>
-
         </footer>
     </form>
 
